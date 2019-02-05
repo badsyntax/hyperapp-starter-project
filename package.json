@@ -64,8 +64,7 @@
     "plugins": {
       "postcss-preset-env": {},
       "postcss-import": {},
-      "postcss-nested": {},
-      "cssnano": {}
+      "postcss-nested": {}
     }
   },
   "prettier": {

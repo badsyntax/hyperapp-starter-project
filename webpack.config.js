@@ -34,7 +34,8 @@ module.exports = (env, argv) => {
                 modules: true,
                 localIdentName: '[local]--[hash:base64:5]',
                 sourceMap: true,
-                camelCase: true
+                camelCase: true,
+                importLoaders: 1
               }
             },
             'postcss-loader'
