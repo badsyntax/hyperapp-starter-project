@@ -1,6 +1,6 @@
 # hyperapp-starter-project
 
-An extremely basic starter project to get started with hyperapp.
+An extremely basic starter project to get started with [hyperapp](https://github.com/jorgebucaran/hyperapp).
 
 * hyperapp using jsx
 * webpack (dev server & minified prod builds)
