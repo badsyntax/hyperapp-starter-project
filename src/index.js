@@ -7,12 +7,12 @@ const c = classNames.bind(STYLES);
 
 const state = {
   title: 'Hyperapp starter project',
-  showMessage: false,
+  showMessage: false
 };
 
 const actions = {
-  toggleMessage: evt => (state, actions) => ({
-    showMessage: !state.showMessage,
+  toggleMessage: () => state => ({
+    showMessage: !state.showMessage
   })
 };
 

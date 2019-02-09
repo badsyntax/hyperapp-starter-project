@@ -8,7 +8,7 @@
     "build": "webpack --mode=production",
     "start": "webpack-dev-server --open",
     "lint:css": "stylelint src/**/*.css",
-    "lint:js": "eslint src/**/*.js",
+    "lint:js": "eslint --ext .js .",
     "lint": "npm run lint:js && npm run lint:css"
   },
   "keywords": [],
@@ -58,8 +58,24 @@
           "pragma": "h"
         }
       ]
+    ],
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "useBuiltIns": "entry",
+          "targets": {
+            "esmodules": true
+          }
+        }
+      ]
     ]
   },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "not dead"
+  ],
   "postcss": {
     "plugins": {
       "postcss-preset-env": {},
@@ -101,5 +117,8 @@
         }
       ]
     }
-  }
+  },
+  "eslintIgnore": [
+    "build"
+  ]
 }
